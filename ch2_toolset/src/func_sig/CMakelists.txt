@@ -1,0 +1,2 @@
+add_executable(func_sig func_sig.cpp)
+set_output_dir(func_sig)

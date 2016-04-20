@@ -1,0 +1,8 @@
+add_subdirectory(func_sig)
+
+#file(GLOB srcs *.cpp)
+#foreach( src ${srcs} )
+#  get_filename_component(t ${src} FILENAME_WE)
+#  add_executable( ${t} ${src} )
+#  set_output_dir(${t})
+#endforeach()

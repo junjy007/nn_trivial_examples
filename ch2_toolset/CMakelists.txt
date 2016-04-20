@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.8.4)
+project(ch2_ts)
+
+function(set_output_dir tgt)
+  set_target_properties(${tgt} PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin
+    LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib
+    ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/lib
+  )
+endfunction()
+
+add_subdirectory(src)
